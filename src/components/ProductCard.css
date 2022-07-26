@@ -1,0 +1,36 @@
+.productCard__container{
+  
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border: solid 1px gray;
+  border-radius: 8px;;
+  font-size: 12px;
+  margin: 5px;
+  padding: 10px;
+  
+
+}
+
+.productCard__imageWrapper{
+  display: flex;
+  align-content: center;
+  position: relative;
+  justify-content: center
+  
+}
+
+.productCard__image{
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.ProductCard__Text{
+  position: relative;
+
+}
