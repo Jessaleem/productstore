@@ -5,20 +5,20 @@ import ProductCard from '../components/ProductCard'
 
 const HomePage = () => {
 
-  const [products, setProducts] = useState([])
+  // const [products, setProducts] = useState([])
 
-  useEffect (( ) => {
-    const fetchData = async () => {
-      const result = await getProducts();
-      setProducts(result)
-    }
-    fetchData();
-  }, [] )
+  // useEffect (( ) => {
+  //   const fetchData = async () => {
+  //     const result = await getProducts();
+  //     setProducts(result)
+  //   }
+  //   fetchData();
+  // }, [] )
 
 
   return(
 
-    <ProductCard products={products}/>
+    <ProductCard />
 
   )
 }
