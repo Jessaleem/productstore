@@ -1,22 +1,19 @@
 const BASE_URL = 'https://fakestoreapi.com/';
 
 export async function getProducts() {
-  try{
-    const response = await fetch(`${BASE_URL}products`)
-    return await response.json();
-  } catch (error){
-    return new Error(error)
+  try {
+    const response = await fetch(`${BASE_URL}products`);
+    return response.json();
+  } catch (error) {
+    return new Error(error);
   }
 }
 
 export async function getProduct(id) {
-  try{
+  try {
     const response = await fetch(`${BASE_URL}products/${id}`);
-    return await response.json();
-  } catch (error){
-    return new Error(error)
+    return response.json();
+  } catch (error) {
+    return new Error(error);
   }
 }
-
-
-

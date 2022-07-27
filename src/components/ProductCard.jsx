@@ -1,46 +1,28 @@
-import './ProductCard.css'
-import { getProducts } from '../Services/products'
-import { useEffect, useState } from 'react'
+import './ProductCard.css';
 
-const ProductCard = () => {
+const ProductCard = (props) => {
+  const { products } = props;
 
-  const [products, setProducts] = useState([])
+  return (
 
-  useEffect (( ) => {
-    const fetchData = async () => {
-      const result = await getProducts();
-      setProducts(result)
-    }
-    fetchData();
-  }, [] )
+    products.map((product) => (
 
- 
-
-  return(
-
-    <section>
-      <nav className='product__container'>
-        {
-          products.map((product) => (
-          <div key= {product.id}>  
-            <div className = "productCard__container">         
-              <div className='productCard__imageWrapper' >
-                <img className = 'productCard__image' src={product.image} alt={product.title}/> 
-              </div>
-              <div className='ProductCard__Text'>     
-                <span><b>{product.title}</b></span>
-              </div>
-              <div className='ProductCard__button'>
-                <button className='productCard__button'></button>
-              </div>  
-            </div>          
+      <div key={product.id}>
+        <div className="productCard__container">
+          <div className="productCard__imageWrapper">
+            <img className="productCard__image" src={product.image} alt={product.title} />
           </div>
-          )
-          )
-        }
-      </nav>  
-    </section>
-  )
-}
+          <div className="ProductCard__Text">
+            <span><b>{product.title}</b></span>
+          </div>
+          <div className="ProductCard__button">
+            <button type="submit" className="productCard__button"> Go </button>
+          </div>
+        </div>
+      </div>
+    ),
+    )
+  );
+};
 
 export default ProductCard;
