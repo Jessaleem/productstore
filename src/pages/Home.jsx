@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getProducts } from '../Services/products';
-import ProductCard from '../components/ProductCard';
+import MainPage from '../components/Main/index';
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
@@ -14,7 +14,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <ProductCard products={products} />
+    <MainPage product={products} />
   );
 };
 
