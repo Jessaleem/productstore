@@ -1,9 +1,9 @@
 import './index.css';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+// import { useEffect, useState } from 'react';
 
 const ProductCard = ({ main }) => (
-
   <div className="productCard__container">
     <div className="productCard__imageWrapper">
       <img className="productCard__image" src={main.image} alt={main.title} />

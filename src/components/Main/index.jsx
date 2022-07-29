@@ -1,9 +1,10 @@
+import './index.css';
 import PropTypes from 'prop-types';
 import ProductCard from '../ProductCard';
 
 const MainPage = ({ product }) => (
 
-  <div className="mainpage__container">
+  <div className="mainPage__container">
     {
       product.map((item) => (
         <ProductCard key={item.id} main={item} />
