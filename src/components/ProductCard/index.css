@@ -30,3 +30,11 @@
 .ProductCard__Text{
   position: relative;
   }
+
+.productCard__button{
+  background-color: #3E6CFF;
+  color:aliceblue;
+  border-radius: 8px;
+  border: transparent;
+
+}
