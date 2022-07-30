@@ -1,7 +1,13 @@
 .header__Container{
-  background-color: #6C71FC;
+  background-color: #6AA9EB;
   color:aliceblue;
+  margin:0px;
 }
 .header__linkhome{
   color:black;
 }
+
+.header_h2{
+  margin-top:0px;
+}
+
