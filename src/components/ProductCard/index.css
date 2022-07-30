@@ -5,13 +5,14 @@
   flex-direction: column;
   justify-content: space-around;
   position: relative;
-  width: 300px;
-  height: 200px;
-  border: solid 1px gray;
+  width: 350px;
+  height: 250px;
+  border: solid 1px #BDC3C7;
   border-radius: 8px;;
   font-size: 12px;
-  margin: 5px;
+  margin: 20px;
   padding: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 
 }
 .productCard__imageWrapper{
@@ -23,18 +24,32 @@
 }
 .productCard__image{
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 
 }
 .ProductCard__Text{
   position: relative;
+  font-size: 14px;
   }
+
+.productCard__bottombox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+}
+.productCard__timer{
+  margin-right: 50px;
+
+}
 
 .productCard__button{
   background-color: #3E6CFF;
   color:aliceblue;
   border-radius: 8px;
   border: transparent;
+
 
 }

@@ -22,11 +22,14 @@ const ProductDetail = () => {
         <div className="productDetail__imageWrapper">
           <img className="productDetail__image" src={product.image} alt={product.title} />
         </div>
-        <div className="productDetail__description">
-          {product.description}
-        </div>
-        <div className="productDetail__description">
-          {product.price}
+        <div className="productDetail__card">
+          <div className="productDetail__description">
+            <p><b>{product.title}</b></p> {product.description}
+          </div>
+          <div className="productDetail__description">
+            <b><span>Price:</span> {product.price}</b>
+            {/* <p><b>Rate: {product.rating.rate}</b> ({product.rating.count})</p> */}
+          </div>
         </div>
       </div>
     </>

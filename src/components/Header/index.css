@@ -1,7 +1,14 @@
 .header__Container{
+  display: flex;
+  justify-content: space-around;
   background-color: #6AA9EB;
   color:aliceblue;
-  margin:0px;
+  margin-bottom: 10px;
+
+}
+.header__Title{
+  display: flex;
+
 }
 .header__linkhome{
   color:black;
@@ -10,4 +17,22 @@
 .header_h2{
   margin-top:0px;
 }
+
+.header__image{
+  width: 50px;
+  height: 50px;
+}
+
+.header__menuWraper{
+  margin: 10px;
+  display:flex;
+}
+
+.header__linkhome{
+margin:5px;
+}
+
+.header__linkAbout{
+  margin:5px;
+  }
 

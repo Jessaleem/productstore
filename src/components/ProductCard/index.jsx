@@ -31,27 +31,29 @@ const ProductCard = ({ main }) => {
       <div className="productCard__imageWrapper">
         <img className="productCard__image" src={main.image} alt={main.title} />
       </div>
-      <div>
-        {timerMinutes}:{timerSeconds}
-      </div>
       <div className="ProductCard__Text">
         <span><b>{main.title}</b></span>
       </div>
-      {
-      stopbutton
-        ? (
-          <div className="ProductCard__button">
-            <button disable type="submit" className="productCard__button"> Go To Detail </button>
-          </div>
-        )
-        : (
-          <Link className="product-link" to={`/products/${main.id}`}>
+      <div className="productCard__bottombox">
+        <div className="productCard__timer">
+          {timerMinutes}:{timerSeconds}
+        </div>
+        {
+        stopbutton
+          ? (
             <div className="ProductCard__button">
-              <button type="submit" className="productCard__button"> Go To Detail </button>
+              <button disable type="submit" className="productCard__button"> Go To Detail </button>
             </div>
-          </Link>
-        )
-      }
+          )
+          : (
+            <Link className="product-link" to={`/products/${main.id}`}>
+              <div className="ProductCard__button">
+                <button type="submit" className="productCard__button"> Go To Detail </button>
+              </div>
+            </Link>
+          )
+        }
+      </div>
     </div>
   );
 };
