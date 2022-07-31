@@ -101,10 +101,11 @@
 }
 .about__description{
   position: relative;
-  text-align: left;
+  text-align: justify;
   padding-left: 50px;
   line-height : 20px;
   padding: 50px;
 }
+
 
 
