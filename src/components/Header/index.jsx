@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 const Header = () => (
   <div className="header__Container">
     <div className="header__Title">
-      <img src="img/marketplace.png" alt="logo" className="header__image" />
+      <Link className="header__linkhome" to="/">
+        <img src="https://i.postimg.cc/6yL4vd1t/marketplace.png" alt="marketplace" className="header__image" />
+      </Link>
       <h2 className="header_h2">Product Store</h2>
     </div>
     <div className="header__menuWraper">

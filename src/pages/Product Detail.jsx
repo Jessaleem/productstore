@@ -25,10 +25,10 @@ const ProductDetail = () => {
         <div className="productDetail__card">
           <div className="productDetail__description">
             <p><b>{product.title}</b></p> {product.description}
+            <p><b>Category:</b> {product.category}</p>
           </div>
           <div className="productDetail__description">
-            <b><span>Price:</span> {product.price}</b>
-            {/* <p><b>Rate: {product.rating.rate}</b> ({product.rating.count})</p> */}
+            <b><span>Price: </span>${Intl.NumberFormat('en-US').format(product.price)}</b>
           </div>
         </div>
       </div>

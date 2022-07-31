@@ -42,7 +42,7 @@ const ProductCard = ({ main }) => {
         stopbutton
           ? (
             <div className="ProductCard__button">
-              <button disable type="submit" className="productCard__button"> Go To Detail </button>
+              <button disable="true" type="submit" className="productCard__button"> Go To Detail </button>
             </div>
           )
           : (
