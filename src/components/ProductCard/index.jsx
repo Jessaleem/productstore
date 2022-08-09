@@ -21,7 +21,7 @@ const ProductCard = ({ main }) => {
         setSeconds(seconds - 1);
       }
     }, 1000);
-    return function clean() {
+    return () => {
       clearInterval(interval);
     };
   }, [seconds]);
