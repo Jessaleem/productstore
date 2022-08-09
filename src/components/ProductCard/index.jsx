@@ -10,7 +10,6 @@ const ProductCard = ({ main }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      clearInterval(interval);
       if (seconds === 0) {
         if (minutes !== 0) {
           setSeconds(59);
@@ -22,6 +21,9 @@ const ProductCard = ({ main }) => {
         setSeconds(seconds - 1);
       }
     }, 1000);
+    return function clean() {
+      clearInterval(interval);
+    };
   }, [seconds]);
   const timerMinutes = minutes < 10 ? `0${minutes}` : minutes;
   const timerSeconds = seconds < 10 ? `0${seconds}` : seconds;
@@ -42,7 +44,8 @@ const ProductCard = ({ main }) => {
         stopbutton
           ? (
             <div className="ProductCard__button">
-              <button disable="true" type="submit" className="productCard__button"> Go To Detail </button>
+              <button disable="true" type="submit" className="productCard__buttond"> Out of Time
+              </button>
             </div>
           )
           : (
